@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F3E5F5">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/thumb"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Pst" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight=".60"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="wehr exruhwepu hrpuwehr x"
+                        android:maxLines="2"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="right">
+                    <ImageButton
+                        android:id="@+id/share_post"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:src="@drawable/ic_share_white_18dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/detail_button_shape"
+                        android:tint="#FFFFFF" />
+
+                    <ImageButton
+                        android:id="@+id/read_more"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:src="@drawable/ic_description_white_18dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/detail_button_shape"
+                        android:tint="#FFFFFF"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

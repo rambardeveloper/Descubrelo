@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinatorLayout"
+    tools:context="com.gamingpty.descubrelo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <!-- bottom sheet layout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_behavior="@string/string_bottom_sheet_behavior"
+        android:elevation="@dimen/z_bottom_sheet"
+        android:background="@color/timestamp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="CATEGORIES"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/local_play"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:src="@drawable/ic_local_play_white_24dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/social_button_shape"
+                android:layout_margin="10dp"
+                android:tint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/local_pizza"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_local_pizza_white_24dp"
+                android:background="@drawable/social_button_shape"
+                android:layout_margin="10dp"
+                android:tint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/store_mall"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:src="@drawable/ic_store_mall_directory_white_24dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/social_button_shape"
+                android:layout_margin="10dp"
+                android:tint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/local_dining"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:src="@drawable/ic_local_dining_white_24dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/social_button_shape"
+                android:layout_margin="10dp"
+                android:tint="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_detail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_behavior="@string/string_bottom_sheet_behavior"
+        android:elevation="@dimen/z_bottom_sheet"
+        android:background="@color/timestamp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

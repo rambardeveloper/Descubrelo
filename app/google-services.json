@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "251375747408",
+    "project_id": "descubrelo-142615"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251375747408:android:eb0ab2b533ae2b02",
+        "android_client_info": {
+          "package_name": "com.gamingpty.descubrelo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251375747408-cj08d92ls8a5p8elb1rlip7aph22q3ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamingpty.descubrelo",
+            "certificate_hash": "4E661AF63AA6CC6F38776F70918E9F95D1D46007"
+          }
+        },
+        {
+          "client_id": "251375747408-vt01hoo4fffd7eos47urhssotl9eq5dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamingpty.descubrelo",
+            "certificate_hash": "2E1598B593821C24AED6834D95E5B5D08A3E2781"
+          }
+        },
+        {
+          "client_id": "251375747408-j1bcptkc1db5qoesvgmu5ltp1u7dn1i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUtLCvdJ_lgoWW-IfKiyAgRRUirtwcm-Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
