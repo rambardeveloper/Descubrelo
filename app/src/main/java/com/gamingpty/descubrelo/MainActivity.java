@@ -1,6 +1,7 @@
 package com.gamingpty.descubrelo;
 
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -44,6 +45,14 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //incluye el icon en el action bar
+        /*android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.mipmap.descubrelo_logo);*/
+
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -206,7 +215,8 @@ public class MainActivity extends AppCompatActivity
                     , new NotificationsFragment()).commit();
 
         } else if (id == R.id.nav_share) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame
+                    , new AboutFragment()).commit();
         } else if (id == R.id.nav_send) {
 
         }
